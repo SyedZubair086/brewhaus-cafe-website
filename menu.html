@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Our Menu | BrewHaus</title>
+  <meta name="description" content="Discover handcrafted coffee, refreshing cold drinks and tea at BrewHaus Cafe.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Announcement bar -->
+    <div class="announcement">
+        <p>Freshly brewed happiness, every single day.</p>
+    </div>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+
+            <a href="index.html" class="logo">
+                BrewHaus<span>.</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <a href="contact.html" class="nav-cta">
+                Reserve a Table <span aria-hidden="true">↗</span>
+            </a>
+        </nav>
+    </header>
+
+  <main>
+
+    <!-- Menu Hero -->
+    <section class="menu-hero premium-section">
+      <div class="menu-hero-content">
+        <p class="eyebrow">GOOD TASTE STARTS HERE</p>
+
+        <h1>
+          A little comfort.<br>
+          <span>A lot of coffee.</span>
+        </h1>
+
+        <p class="menu-hero-description">
+          Carefully crafted drinks, quality ingredients and
+          your favourite flavours — all in one place.
+        </p>
+
+        <a href="#menu" class="btn btn-primary">Explore the Menu ↓</a>
+      </div>
+
+      <div class="menu-hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1000&auto=format&fit=crop&q=85"
+          alt="Freshly brewed coffee on a cafe table"
+        >
+        <div class="image-note">
+          <span>☕</span>
+          <div>
+            <strong>Made with care</strong>
+            <p>Fresh in every cup.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Products -->
+    <section class="menu-section premium-section" id="menu">
+
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">MADE FOR YOUR MOMENT</p>
+          <h2>Find your <span>favourite.</span></h2>
+        </div>
+
+        <p class="section-description">
+          From rich espresso to refreshing cold drinks,
+          there is something for every coffee mood.
+        </p>
+      </div>
+
+      <!-- Category Filters -->
+      <div class="menu-filters" aria-label="Filter menu products">
+        <button class="filter-btn active" data-category="all" aria-pressed="true">All Items</button>
+        <button class="filter-btn" data-category="coffee" aria-pressed="false">Hot Coffee</button>
+        <button class="filter-btn" data-category="cold" aria-pressed="false">Cold Drinks</button>
+        <button class="filter-btn" data-category="tea" aria-pressed="false">Tea</button>
+      </div>
+
+      <div class="menu-grid">
+
+        <article class="menu-card" data-category="coffee">
+          <div class="menu-card-image">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=700&auto=format&fit=crop&q=85" alt="Creamy latte coffee" loading="lazy">
+            <span class="product-tag">BESTSELLER</span>
+          </div>
+          <div class="menu-card-info">
+            <div class="product-title-row">
+              <h3>Classic Latte</h3>
+              <span class="menu-price">Rs. 450</span>
+            </div>
+            <p>Rich espresso blended with smooth steamed milk.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="coffee">
+          <div class="menu-card-image">
+            <img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=700&auto=format&fit=crop&q=85" alt="Fresh espresso coffee" loading="lazy">
+          </div>
+          <div class="menu-card-info">
+            <div class="product-title-row">
+              <h3>Classic Espresso</h3>
+              <span class="menu-price">Rs. 300</span>
+            </div>
+            <p>Bold flavour and a beautiful, rich aroma.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="cold">
+          <div class="menu-card-image">
+            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=700&auto=format&fit=crop&q=85" alt="Refreshing iced coffee" loading="lazy">
+            <span class="product-tag">REFRESHING</span>
+          </div>
+          <div class="menu-card-info">
+            <div class="product-title-row">
+              <h3>Iced Coffee</h3>
+              <span class="menu-price">Rs. 500</span>
+            </div>
+            <p>Chilled coffee made for your afternoon break.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="tea">
+          <div class="menu-card-image">
+            <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=700&auto=format&fit=crop&q=85" alt="Freshly brewed tea" loading="lazy">
+          </div>
+          <div class="menu-card-info">
+            <div class="product-title-row">
+              <h3>Classic Tea</h3>
+              <span class="menu-price">Rs. 250</span>
+            </div>
+            <p>A comforting, freshly brewed cup of tea.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="coffee">
+          <div class="menu-card-image">
+            <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?w=700&auto=format&fit=crop&q=85" alt="Cappuccino with creamy foam" loading="lazy">
+          </div>
+          <div class="menu-card-info">
+            <div class="product-title-row">
+              <h3>Cappuccino</h3>
+              <span class="menu-price">Rs. 400</span>
+            </div>
+            <p>Espresso, steamed milk and velvety foam.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="cold">
+          <div class="menu-card-image">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=700&auto=format&fit=crop&q=85" alt="Cold brew coffee" loading="lazy">
+          </div>
+          <div class="menu-card-info">
+            <div class="product-title-row">
+              <h3>Cold Brew</h3>
+              <span class="menu-price">Rs. 550</span>
+            </div>
+            <p>Smooth, chilled coffee with a rich finish.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="menu-cta">
+      <p class="eyebrow">YOUR TABLE IS WAITING</p>
+      <h2>Good coffee is even better <span>together.</span></h2>
+      <p>Stop by, slow down and enjoy your favourite cup with us.</p>
+      <a href="contact.html" class="btn btn-light">Plan Your Visit ↗</a>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">BrewHaus<span>.</span></a>
+                <p>Good coffee. Great moments.</p>
+                <p class="footer-small">
+                    Your neighborhood coffee house.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h2>Explore</h2>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Our Menu</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about.html">Our Story</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-column">
+                <h2>Come Say Hello</h2>
+                <p>Monday – Friday: 7 AM – 9 PM</p>
+                <p>Saturday – Sunday: 8 AM – 10 PM</p>
+                <a href="contact.html">Find us & plan your visit ↗</a>
+            </div>
+
+            <div class="footer-column">
+                <h2>Stay Connected</h2>
+                <p>Good coffee is even better shared.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/" aria-label="Instagram">IG</a>
+                    <a href="https://www.facebook.com/" aria-label="Facebook">FB</a>
+                    <a href="https://www.tiktok.com/" aria-label="TikTok">TK</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 BrewHaus. All rights reserved.</p>
+            <p>Made with care and a little caffeine. ☕</p>
+        </div>
+    </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
